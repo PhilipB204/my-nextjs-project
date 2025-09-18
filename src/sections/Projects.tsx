@@ -55,7 +55,8 @@ export const ProjectsSection = () => {
         <h2 className="font-serif text-3xl md:text-5xl  text-center mt-6">
           Featured Projects</h2>
         <p className="text-center md:text-lg lg:text-xl  text-white/60 mt-4 max-w-md mx-auto">
-        See how I transformed concepts into engaging digital experience.</p>
+        See how I transformed concepts into engaging digital experience.
+        </p>
         <div className="mt-10 md:mt-20  flex flex-col gap-20">
           {portfolioProjects.map((project) => (
             <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden 

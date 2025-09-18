@@ -11,6 +11,7 @@ import GitHubIcon from '@/assets/icons/github.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import { TechIcon } from "@/components/TechIcon";
 import { CardHeader } from "@/components/CardHeader";
+import { ToolBoxItems } from "@/components/ToolBoxItems";
 
 const toolboxItems = [
   {
@@ -95,14 +96,7 @@ export const AboutSection = () => {
               title="My Toolbox" 
               description="Explore the technologies and tools I use to craft exceptional experiences."
             />
-            <div>
-              {toolboxItems.map(item => (
-                <div key={item.title} className="flex items-center gap-2 my-2">
-                  <TechIcon component={item.iconType} />
-                  <span>{item.title}</span>
-                </div>
-              ))}
-            </div>
+          <ToolBoxItems items={toolboxItems} />
           </Card>
 
           <Card>
